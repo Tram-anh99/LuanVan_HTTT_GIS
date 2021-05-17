@@ -1,24 +1,28 @@
-p.page{
-    text-align:right;
-}
-ion-ion.bar-chart-outline{
-   color: black;
-}
-ion-ion.library-outline{
-   color: black;
-}
-ion-ion.pie-chart-outline{
-   color: black;
-}
-ion-ion.person-circle-outline{
-   color: black;
-}
-ion-ion.grid-outline{
-   color: black;
-}
-ion-ion.rocket-outline{
-   color: black;
-}
-ion-ion.people-circle-outline{
-   color: black;
-}
+body {
+   background-color: #e4e4e4;
+   font-family: "Poppins", sans-serif;
+ }
+ 
+ .navbar {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: #ffffff;
+   box-shadow: 1px 8px 49px 0px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .navbar a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+ 
+ img.icon-width {
+   width: 50px;
+   display: flex;
+   align-items: flex-end;
+ }
+ 
