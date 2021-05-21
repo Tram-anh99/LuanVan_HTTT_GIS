@@ -4,16 +4,9 @@ body {
    /* font-family: Georgia, serif; */
    /* font-family: cursive; */
    font-family: "Sofia", sans-serif;
-   font-size: 20px; }
- 
- /* .navbar a {
-   display:inherit;
-   justify-content:right;
-   align-items:flex-end;
-   text-decoration: none;
-   margin: 25px;
-   float:right;
- } */
+   font-size: 20px;
+   margin: 0; }
+ /* ==================================== */
   img.Chuyên_gia {
    float: left;
    width: 50px;
@@ -35,13 +28,14 @@ body {
    align-items: flex-end;
    transition: transform 2s;
   }
-  img.menu {
+  img.Đối_tượng {
     float: left;
    width: 50px;
    display:block;
    align-items: flex-end;
-   transition: transform 2s;
+   /* transition: transform 1s; */
   }
+/* ==================================== */
  img.Chuyên_gia:hover {
   float: left;
    transform: rotate(360deg);
@@ -63,41 +57,107 @@ img.Khách:hover {
   display:block;
   align-items: flex-end;
 }
-img.menu:hover {
+img.Đối_tượng:hover {
   float: left;
-  transform: rotate(360deg);
+  transform: rotate(0.5turn);
   width: 50px;
   display:block;
   align-items: flex-end;
 }
+/*=============giao dien doi tuong dung=================== */
 
-.dropdown{
+.dropdown-Đối_tượng{
   float:right;
 }
-.dropdown-content {
+.dropdown-Nội_dung {
   display: none;
-  position: absolute;
+  position: fixed;
+  top: 60px;
   right: 0;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.dropdown-content a {
+.dropdown-Nội_dung a {
   /* color: black; */
   padding: 12px 10px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #f1f1f1;}
-.dropdown:hover .dropdown-content {
+.dropdown-Nội_dung a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-Đối_tượng:hover .dropdown-Nội_dung {
   display: block;
 }
-li.dropdown {
+.dropdown-Đối_tượng {
   display: inline-block;
 }
 .button{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: black;
-  border: 2px solid #e7e7e700;
+  border: 0px  solid #bb353500;
+}
+/*Menu chính */
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+/*Menu chính */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
